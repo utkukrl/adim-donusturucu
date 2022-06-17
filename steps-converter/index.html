@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="style.css">
+    <title>Adım Hesaplayıcı</title>
+</head>
+<body>
+    <video autoplay muted loop id="myVideo">
+        <source src="videoplayback.mp4" type="video/mp4">
+    </video>
+    <div class="wrapper">
+        <h2 class="title">Adım Hesaplama Uygulaması</h2>
+        <h3 id="info">Adımı girin ve Hesaplayın</h3>
+        <p class="input">Adım Sayısı</p>
+        <input type="number" onfocus="this.value=''"
+        id="steps">
+        <!--Daha sonra resim yazılacak -->
+        <div class="loader">
+              <img src="loader.gif" alt="">
+        </div>
+        <p id="km"></p>
+        <p id="calories"></p>
+        <!--Temizleme ve hesaplama için butonlar-->
+        <button id="btn" class="calculate">Hesapla</button>
+        <button id="btn" class="clear">Temizle</button>
+        <br>
+        <br>
+        <footer class="footer">
+            <h5>Utku Karagül &copy;</h5>
+            <h5>2022 &copy;</h5>
+        </footer>
+    </div>
+    <script src="script.js"></script>
+</body>
+</html>
